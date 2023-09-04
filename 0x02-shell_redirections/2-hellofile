@@ -1,2 +1,2 @@
 #!/bin/bash
->{/etc/passwd} 2>&1
+echo ">/etc/passwd} 2>&1"
