@@ -1,2 +1,2 @@
 #!/bin/bash
-echo ${#path_dirs[@]}
+echo $PATH | tr ':' '\n' | wc -l
