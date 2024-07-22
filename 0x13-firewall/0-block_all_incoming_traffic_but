@@ -1,0 +1,17 @@
+# Connect to web-01 via SSH
+ssh username@web-01-ip-address
+
+# Update package list and install ufw
+sudo apt update
+sudo apt install ufw
+
+# Allow necessary ports
+sudo ufw allow 22/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 80/tcp
+
+# Enable ufw
+sudo ufw enable
+
+# Check the status to verify rules
+sudo ufw status
